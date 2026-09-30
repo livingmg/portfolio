@@ -1,0 +1,16 @@
+p{ 
+    color: #07021a;
+    font-family: "Abhaya Libre", sans-serif;
+}
+h1{
+    color: #7e080ea2;
+}
+h2{
+    background-color: #debdbd;
+    font-size: 1.5em;
+}img.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
