@@ -47,5 +47,24 @@ a {
 a:hover {
     text-decoration: underline;
 }
+nav {
+    background-color: white;
+    text-align: center;
+    padding: 18px 10px;
+    border-bottom: 1px solid #dddddd;
+}
+
+nav a {
+    display: block;
+    color: #172554;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #2563eb;
+    background-color: #f5f7fa;
+}
 
 
