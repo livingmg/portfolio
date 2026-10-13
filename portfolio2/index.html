@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Interactive Portfolio</title>
+    <link rel="stylesheet" href="/portfolio2/style.css">
+</head>
+<body>
+    <h1 id="heading">Welcome to My Interactive Portfolio</h1>
+    <p id="intro">Welcome to my interactive portfolio! I'm excited to share my work with you.</p>
+    <button id="changeButton">Change heading</button>
+
+    <div class="card">
+        <h1>Say hello!</h1>
+        <label for="VisitorName">Your Name:</label>
+        <input type="text" id="VisitorName" name="VisitorName">
+        <p id="message">your greeting will appear here!</p>
+    </div>
+    <div class="card">
+        <h2>Website Appearance</h2>
+        <button id="themeButton" class="changetheme">Change Theme</button>
+    </div>
+<!-- Projects Section -->
+<div class="card">
+    <h2>My Projects</h2>
+    <form id="projectForm">
+        <input id="projectInput" type="text" placeholder="Project name" required>
+        <button type="submit">Add Project</button>
+    </form>
+    <ul id="projectList"></ul>
+</div>
+
+<script src="/portfolio2/script.js"></script>
+</body>
+</html>
