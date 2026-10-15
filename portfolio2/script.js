@@ -14,7 +14,7 @@ visitorName.addEventListener("input", function () {
         : "Your greeting will appear here!";
 });
 let themeButton = document.getElementById("themeButton");
-
+ 
 if (localStorage.getItem("theme") === "dark") {
     document.body.classList.add("dark-theme");
 }
