@@ -10,7 +10,7 @@ greetButton.addEventListener("click", function() {
     if (name === "") {
         message.textContent = "Please enter your name!";
     } else {
-        message.textContent = "Hello, " + name + "welcome to the student card!";
+        message.textContent = "Hello, " + name + ". Welcome to the student card!";
     }
 });
 
