@@ -3,75 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Livingstone Maghenda | IT Technician &amp; Digital Marketer</title>
+
+    <!-- Optional speed boost: start connecting to Google's font servers early -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Loads the two fonts: Playfair Display (headings) and Inter (everything else) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Livingstone Maghenda</h1>
-        <p>IT Technician</p>
-        <p>I am a dedicated IT technician and a Digital Marketer.</p>
+
+    <!-- HEADER: the sticky top bar. The nav now lives INSIDE the header. -->
+    <header class="site-header">
+        <nav class="nav">
+            
+            <a href="#top" class="logo">Livingstone Maghenda</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <a href="#about Me">About Me</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+
+    <!-- HERO: the big intro. id="top" is where the logo link scrolls to. -->
+    <section class="hero" id="top">
+        <p class="eyebrow">IT Technician · Digital Marketer · Nairobi, Kenya</p>
+        <h1>Making technology <em>work</em> for Kenyan businesses.</h1>
+        <p class="lead">I am a dedicated IT technician and digital marketer, building practical websites and digital solutions while growing as a software engineer.</p>
+        <div class="cta">
+            <a href="#projects" class="btn btn-primary">View my work ↓</a>
+            <a href="/files/Livingstone-Maghenda-CV.pdf.pdf" class="btn btn-outline" download>Download CV ↗</a>
+        </div>
+    </section>
+
     <main>
-        <section id="about Me">
+        <section id="about">
             <h2>About Me</h2>
-            <p>I’m Livingstone, an IT and digital technology enthusiast with a background in IT support, data annotation, digital marketing, and web technologies. I enjoy using technology to solve real-world problems and exploring how AI and automation can improve everyday work. I’m currently developing my software engineering skills, with a focus on building practical websites and digital solutions.</p>
-            <img src="./images/Livingstone Portrait.jpeg" alt="Livingstone Maghenda" width="200">
+            <p>I’m Livingstone, a digital marketer and ICT technician with several years of experience managing social media, Google Business Profiles and branding for Kenyan SMEs. I founded Wazi Digital, an AI-augmented freelance agency, and I’m building Renewed, an AI-powered clean energy platform for African solar companies. I’m now growing my software engineering skills to build practical websites and digital tools.</p>
+            <img class="profile-image" src="./images/livingstone-portrait.jpeg.jpeg" alt="Livingstone Maghenda">
         </section>
+
+        <section id="experience">
+            <h2>Work Experience</h2>
+
+            <!-- One <article> per job. Each has a dates column and a details column. -->
+            <article class="job">
+                <p class="job-dates">2022 – Present</p>
+                <div>
+                    <h3>Founder &amp; Lead Digital Marketer</h3>
+                    <p class="job-org">Wazi Digital Agency, Kitengela</p>
+                    <ul>
+                        <li>Manage end-to-end digital marketing for 5+ SME clients, from campaign planning to execution and reporting.</li>
+                        <li>Track campaign performance and engagement across Meta, TikTok and WhatsApp to guide content and ad spend.</li>
+                        <li>Build AI-powered automation workflows with Make.com and AI agents to scale campaign delivery.</li>
+                        <li>Create Google Business Profiles, branding assets and content calendars.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="job">
+                <p class="job-dates">2021 – Present</p>
+                <div>
+                    <h3>ICT Technician (Freelance)</h3>
+                    <p class="job-org">Self-employed</p>
+                    <ul>
+                        <li>Provide hardware and software support, network setup and IT troubleshooting for SMEs.</li>
+                        <li>Install and configure systems, peripherals and office networks.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="job">
+                <p class="job-dates">Oct – Dec 2024</p>
+                <div>
+                    <h3>IT Industrial Attachment</h3>
+                    <p class="job-org">Kenya Ports Authority, Mombasa</p>
+                    <ul>
+                        <li>Installed operating systems and Office 365, and configured the SAP client.</li>
+                        <li>Troubleshot laptops, set up printers and ran structured cabling (UTP and fiber optic).</li>
+                        <li>Configured and troubleshot network switches, handheld terminals and wireless access points.</li>
+                        <li>Commended for performance and dedication.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="job">
+                <p class="job-dates">2021</p>
+                <div>
+                    <h3>AI Data Annotator / Transcriptionist</h3>
+                    <p class="job-org">Remotask, Remote (freelance)</p>
+                    <ul>
+                        <li>Delivered transcription, data annotation and quality checks for global AI training projects.</li>
+                        <li>Worked independently while meeting accuracy standards, deadlines and performance targets.</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
         <section id="skills">
             <h2>Skills</h2>
             <ul>
-                <li>HTML & Web Development – Building and structuring web pages.</li>
+                <li>HTML &amp; Web Development – Building and structuring web pages.</li>
                 <li>IT Support – Troubleshooting hardware, software, and network issues.</li>
                 <li>Networking – Basic network setup, configuration, and troubleshooting.</li>
                 <li>Digital Marketing – Google Business Profile management, online presence, and digital advertising.</li>
                 <li>Data Annotation – Data labeling, categorization, segmentation, and quality checking for AI development.</li>
-                <li>AI & Automation – Exploring AI tools and automation to improve workflows and solve practical problems.</li>
-                <li>Graphic & Content Design – Creating digital content and visual materials for businesses.</li>
+                <li>AI &amp; Automation – Exploring AI tools and automation to improve workflows and solve practical problems.</li>
+                <li>Graphic &amp; Content Design – Creating digital content and visual materials for businesses.</li>
             </ul>
         </section>
+
         <section id="education">
             <h2>Education</h2>
             <ol>
-                <li>ICT Level V — Kenya Coast National Polytechnic (KCNP),Completed</li>
+                <li>ICT Level V — Kenya Coast National Polytechnic (KCNP), Completed</li>
                 <li>Software Engineering — Currently pursuing</li>
-                <li>Strathmore University Certificate — Completed</li>
-                <li>Ajira Digital Certificate — Completed</li>
+                <li>Clean Energy Entrepreneurship Programme, Cohort 3 — UK PACT, Strathmore University and the Ministry of Energy and Petroleum, 2026</li>
+                <li>Ajira Digital Program Certificate — Completed, 2021</li>
             </ol>
         </section>
+
         <section id="projects">
             <h2>Projects</h2>
-            <p>Here are some of the projects I have worked on, and some currently ongoing:</p>
-            <ol>
-                <li>Wazi Digital Website — Built and developed a digital agency website showcasing services, projects, and digital solutions.<a href="https://wazidigital.com/" target="_blank">View Project</a></li>
-                <li>Wazi AI Studio — Designed an AI-assisted digital presence assessment concept to help businesses identify opportunities to improve their online presence.<a href="https://wazidigital.com/wazi-ai-studio" target="_blank">View Project</a></li>
-                <li>Greenlight Electricals & Electronics — Developed digital marketing content and online presence solutions for a local electronics and electrical business.<a href="https://www.instagram.com/greenlightelec?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank">View Project</a></li>
-                <li>Renewed Clean Energy — Developing an AI-powered concept to help solar businesses estimate customer needs, generate leads, and manage inquiries.<a href="#" target="_blank">View Project</a></li>
-                <li>Personal Portfolio Website — Currently developing a personal portfolio using HTML as part of my software engineering studies.</li>
-            </ol>
+            <ul>
+                <li>Wazi Digital Website — Built the website for my digital agency, showcasing services, projects and digital solutions. <a href="https://labs.google.com/pomelli/website/8-eACFySqHD49sOK9U84W1" target="_blank" rel="noopener">View website</a></li>
+                <li>Wazi AI Studio — An AI-assisted digital presence assessment that helps businesses find ways to improve their online presence. The AI assistants live on a page of the Wazi Digital website. <a href="https://labs.google.com/pomelli/website/8-eACFySqHD49sOK9U84W1" target="_blank" rel="noopener">See the AI assistants</a></li>
+                <li>Greenlight Electricals &amp; Electronics (client work) — Managed digital marketing content and online presence for a local electronics and electrical business. <a href="https://www.instagram.com/greenlightelec?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">View their Instagram</a></li>
+                <li>Renewed Clean Energy OS — An AI-powered platform that helps solar companies in Africa estimate customer needs, generate leads and manage inquiries. Currently at investor pitch stage.</li>
+            </ul>
         </section>
+
         <section id="contact">
             <h2>Contact</h2>
             <p>If you would like to get in touch, please reach out via email or phone.</p>
             <ul>
-                <li>Email: 
-                    <a href="mailto:livingstonemaghenda@gmail.com">livingstonemaghenda@gmail.com</a></li>
-                <li>Phone: 
-                    <a href="tel:+254768735937">+254 768 735 937</a></li>
-                    <li>LinkedIn: 
-                        <a href="https://www.linkedin.com/in/livingstone-maghenda-118119270/" target="_blank">LinkedIn Profile</a></li>
+                <li>Email: <a href="mailto:livingstonemaghenda@gmail.com">livingstonemaghenda@gmail.com</a></li>
+                <li>Phone: <a href="tel:+254768735937">+254 768 735 937</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/livingstone-maghenda-118119270/" target="_blank" rel="noopener">LinkedIn Profile</a></li>
             </ul>
         </section>
     </main>
+
+    <!-- footer: the bottom bar. -->
     <footer>
-        <p>&copy; 2026 Livingstone Maghenda. Learning today. Building tomorrow.</p>
+        <p>&copy; 2026 Livingstone Maghenda.</p>
     </footer>
+<script src="/script.js"></script>
 </body>
 </html>
